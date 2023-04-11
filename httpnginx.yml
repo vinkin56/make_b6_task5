@@ -1,0 +1,9 @@
+- name: Install ngnix php and add user
+  hosts: myservers
+  gather_facts: yes
+  become: 'yes'
+
+  roles:
+    - users
+    - http
+    - php
